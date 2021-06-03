@@ -24,6 +24,7 @@ struct ContentView: View {
                         }
                 )
                 .sheet(isPresented: $showingAddScreen) {
+//                    here we need to write values in the environment
                     AddBookView().environment(\.managedObjectContext, self.moc)
                 }
         }
