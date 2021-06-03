@@ -10,10 +10,11 @@
 		AFB3120026676108002C389B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB311FF26676108002C389B /* AppDelegate.swift */; };
 		AFB3120226676108002C389B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB3120126676108002C389B /* SceneDelegate.swift */; };
 		AFB3120426676108002C389B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB3120326676108002C389B /* ContentView.swift */; };
-		AFB3120726676108002C389B /* project_11.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFB3120526676108002C389B /* project_11.xcdatamodeld */; };
 		AFB312092667610D002C389B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB312082667610D002C389B /* Assets.xcassets */; };
 		AFB3120C2667610D002C389B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB3120B2667610D002C389B /* Preview Assets.xcassets */; };
 		AFB3120F2667610D002C389B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB3120D2667610D002C389B /* LaunchScreen.storyboard */; };
+		AFB3121826676832002C389B /* Project11.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFB3121626676832002C389B /* Project11.xcdatamodeld */; };
+		AFB3121C26677CB5002C389B /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB3121B26677CB5002C389B /* AddBookView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +22,12 @@
 		AFB311FF26676108002C389B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFB3120126676108002C389B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AFB3120326676108002C389B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		AFB3120626676108002C389B /* project_11.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = project_11.xcdatamodel; sourceTree = "<group>"; };
 		AFB312082667610D002C389B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFB3120B2667610D002C389B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AFB3120E2667610D002C389B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFB312102667610D002C389B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB3121726676832002C389B /* Project11.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project11.xcdatamodel; sourceTree = "<group>"; };
+		AFB3121B26677CB5002C389B /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +63,11 @@
 				AFB311FF26676108002C389B /* AppDelegate.swift */,
 				AFB3120126676108002C389B /* SceneDelegate.swift */,
 				AFB3120326676108002C389B /* ContentView.swift */,
+				AFB3121626676832002C389B /* Project11.xcdatamodeld */,
+				AFB3121B26677CB5002C389B /* AddBookView.swift */,
 				AFB312082667610D002C389B /* Assets.xcassets */,
 				AFB3120D2667610D002C389B /* LaunchScreen.storyboard */,
 				AFB312102667610D002C389B /* Info.plist */,
-				AFB3120526676108002C389B /* project_11.xcdatamodeld */,
 				AFB3120A2667610D002C389B /* Preview Content */,
 			);
 			path = "project 11";
@@ -151,7 +154,8 @@
 				AFB3120026676108002C389B /* AppDelegate.swift in Sources */,
 				AFB3120226676108002C389B /* SceneDelegate.swift in Sources */,
 				AFB3120426676108002C389B /* ContentView.swift in Sources */,
-				AFB3120726676108002C389B /* project_11.xcdatamodeld in Sources */,
+				AFB3121826676832002C389B /* Project11.xcdatamodeld in Sources */,
+				AFB3121C26677CB5002C389B /* AddBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,13 +355,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		AFB3120526676108002C389B /* project_11.xcdatamodeld */ = {
+		AFB3121626676832002C389B /* Project11.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				AFB3120626676108002C389B /* project_11.xcdatamodel */,
+				AFB3121726676832002C389B /* Project11.xcdatamodel */,
 			);
-			currentVersion = AFB3120626676108002C389B /* project_11.xcdatamodel */;
-			path = project_11.xcdatamodeld;
+			currentVersion = AFB3121726676832002C389B /* Project11.xcdatamodel */;
+			path = Project11.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
