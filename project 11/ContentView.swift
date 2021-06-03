@@ -15,11 +15,10 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            
+//  For the ForEach identifier we can actually use \.self so that it uses the whole object as the identifier
             List {
-//                For the ForEach identifier we can actually use \.self so that it uses the whole object as the identifier
                 ForEach(books, id: \.self) { book in
-                    NavigationLink(destination: Text(book.title ?? "Unknown Title")) {
+                    NavigationLink(destination: DetailView(book: book)) {
                     EmojiRatingView(rating: book.rating)
                         .font(.largeTitle)
                         
