@@ -16,6 +16,7 @@
 		AFB3121C26677CB5002C389B /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB3121B26677CB5002C389B /* AddBookView.swift */; };
 		AFE69BA82668C82600DBC0E3 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE69BA72668C82600DBC0E3 /* RatingView.swift */; };
 		AFE69BAB2668CCF800DBC0E3 /* project_11.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFE69BA92668CCF800DBC0E3 /* project_11.xcdatamodeld */; };
+		AFE69BAD2668D9E200DBC0E3 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE69BAC2668D9E200DBC0E3 /* EmojiRatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AFB3121B26677CB5002C389B /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		AFE69BA72668C82600DBC0E3 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		AFE69BAA2668CCF800DBC0E3 /* project_11.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = project_11.xcdatamodel; sourceTree = "<group>"; };
+		AFE69BAC2668D9E200DBC0E3 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				AFB3120126676108002C389B /* SceneDelegate.swift */,
 				AFB3120326676108002C389B /* ContentView.swift */,
 				AFE69BA72668C82600DBC0E3 /* RatingView.swift */,
+				AFE69BAC2668D9E200DBC0E3 /* EmojiRatingView.swift */,
 				AFE69BA92668CCF800DBC0E3 /* project_11.xcdatamodeld */,
 				AFB3121B26677CB5002C389B /* AddBookView.swift */,
 				AFB312082667610D002C389B /* Assets.xcassets */,
@@ -156,6 +159,7 @@
 			files = (
 				AFB3120026676108002C389B /* AppDelegate.swift in Sources */,
 				AFB3120226676108002C389B /* SceneDelegate.swift in Sources */,
+				AFE69BAD2668D9E200DBC0E3 /* EmojiRatingView.swift in Sources */,
 				AFE69BA82668C82600DBC0E3 /* RatingView.swift in Sources */,
 				AFE69BAB2668CCF800DBC0E3 /* project_11.xcdatamodeld in Sources */,
 				AFB3120426676108002C389B /* ContentView.swift in Sources */,
