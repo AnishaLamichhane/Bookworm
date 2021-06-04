@@ -9,5 +9,7 @@ One of the best ways to learn is to write your own code as often as possible, so
 3. Add a new “date” attribute to the Book entity, assigning Date() to it so it gets the current date and time, then format that nicely somewhere in DetailView.
 
 
-https://user-images.githubusercontent.com/52813885/120787162-ca794c00-c54e-11eb-8c1f-9ac4d8366c6f.mov
+https://user-images.githubusercontent.com/52813885/120788579-390ad980-c550-11eb-9c84-b04de011e804.mov
+
+
 
