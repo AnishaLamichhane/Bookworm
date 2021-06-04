@@ -23,7 +23,7 @@ struct DetailView: View {
                     Image(self.book.genre ?? "Fantasy")
                         .frame(maxWidth: geo.size.width)
                     
-                    Text(self.book.genre?.uppercased() ?? "FANTASY")
+                    Text(self.book.genre?.uppercased() ?? "") //challenge 1
                         .font(.caption)
                         .fontWeight(.black)
                         .padding(8)
