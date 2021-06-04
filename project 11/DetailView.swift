@@ -9,6 +9,12 @@ import SwiftUI
 import CoreData
 
 struct DetailView: View {
+//   property to hold our Core Data managed object context (so we can delete stuff)
+    @Environment(\.managedObjectContext) var moc
+//   propertyx   to hold our presentation mode (so we can pop the view off the navigation stack)
+    @Environment(\.presentationMode) var presentationMode
+    @State private var showingDeleteAlert = false
+    
     let book : Book
     var body: some View {
         GeometryReader { geo in
@@ -39,6 +45,27 @@ struct DetailView: View {
             }
         }
         .navigationBarTitle(Text(book.title ?? "Unknown Book"), displayMode: .inline)
+        .alert(isPresented: $showingDeleteAlert) {
+            Alert(title: Text("Delete Book"), message: Text("Are you sure ?"), primaryButton: .destructive(Text("Delete")) {
+                self.deleteBook()
+            }, secondaryButton: .cancel())
+        }
+        
+        .navigationBarItems(trailing: Button(action: {
+            self.showingDeleteAlert = true
+            
+        }) {
+            Image(systemName: "trash")
+        })
+    }
+    
+    func deleteBook() {
+        moc.delete(book)
+        
+        // uncomment this line if you want to make the deletion permanent
+        // try? self.moc.save()
+        
+        presentationMode.wrappedValue.dismiss()
     }
 }
 
