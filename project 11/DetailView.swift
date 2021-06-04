@@ -32,7 +32,7 @@ struct DetailView: View {
                 
                 Text(self.book.review ?? "No Review")
                     .padding()
-                
+//                here we don't to let user to change rating so we use constant
                 RatingView(rating: .constant(Int(self.book.rating)))
                     .font(.largeTitle)
                 Spacer()
