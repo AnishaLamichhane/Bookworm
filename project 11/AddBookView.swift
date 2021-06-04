@@ -17,6 +17,7 @@ struct AddBookView: View {
     @State private var genre : String? //challenge 1
     @State private var review = ""
     
+
     let genres = ["Fantasy", "Horror" , "Kids" , "Mystery", "Romance", "Poetry", "Thriller", "Suspense"]
     var body: some View {
         
@@ -25,7 +26,7 @@ struct AddBookView: View {
                 Section {
                     TextField("Name of Book: ", text: $title)
                     TextField("Author's Name: ", text: $author)
-                     
+                  
                     Picker("Genre: ", selection: $genre){
                         ForEach(0..<genres.count) { i in
                             Text(genres[i])
@@ -57,6 +58,7 @@ struct AddBookView: View {
                 }
             }
             .navigationBarTitle("Add Book")
+            
         }
     }
 }

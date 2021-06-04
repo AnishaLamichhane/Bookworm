@@ -11,9 +11,10 @@ import CoreData
 struct DetailView: View {
 //   property to hold our Core Data managed object context (so we can delete stuff)
     @Environment(\.managedObjectContext) var moc
-//   propertyx   to hold our presentation mode (so we can pop the view off the navigation stack)
+//   property to hold our presentation mode (so we can pop the view off the navigation stack)
     @Environment(\.presentationMode) var presentationMode
     @State private var showingDeleteAlert = false
+    @State private var publishedDate = Date()
     
     let book : Book
     var body: some View {
@@ -22,6 +23,7 @@ struct DetailView: View {
                 ZStack(alignment: .bottomTrailing) {
                     Image(self.book.genre ?? "Fantasy")
                         .frame(maxWidth: geo.size.width)
+                  
                     
                     Text(self.book.genre?.uppercased() ?? "") //challenge 1
                         .font(.caption)
@@ -37,7 +39,15 @@ struct DetailView: View {
                     .foregroundColor(.secondary)
                 
                 Text(self.book.review ?? "No Review")
+                    
+//                challenge 3
+                Text(publishedDate.addingTimeInterval(600), style: .date)
+                    .font(.footnote)
+                    .foregroundColor(.secondary)
+                    .multilineTextAlignment(.center)
                     .padding()
+                
+                
 //                here we don't to let user to change rating so we use constant
                 RatingView(rating: .constant(Int(self.book.rating)))
                     .font(.largeTitle)
